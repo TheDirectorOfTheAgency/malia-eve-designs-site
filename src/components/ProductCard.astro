@@ -1,0 +1,31 @@
+---
+// ProductCard component
+export interface Props {
+  title: string;
+  price: string;
+  imageUrl: string;
+}
+
+const { title, price, imageUrl } = Astro.props;
+---
+<div class="flex flex-col items-center group cursor-pointer">
+  <div class="w-full aspect-[4/3] overflow-hidden rounded-2xl shadow-sm mb-6 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
+    <img 
+      src={imageUrl} 
+      alt={title} 
+      class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+    />
+  </div>
+  
+  <!-- Small Gold Crown Icon -->
+  <svg class="w-6 h-6 text-[#D4AF37] mb-3" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M2 18h20v2H2v-2zm2-2l2-8 3 4 3-9 3 9 3-4 2 8H4z"/>
+  </svg>
+  
+  <h3 class="font-sans font-semibold text-lg text-brand-dark text-center mb-1">{title}</h3>
+  <p class="font-serif text-brand-dark/80 text-lg mb-4">{price}</p>
+  
+  <button class="opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-xs font-bold tracking-widest text-[#8E7CC3] uppercase border-b border-[#8E7CC3] pb-1 hover:text-brand-dark hover:border-brand-dark">
+    Add to Cart
+  </button>
+</div>

@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-purple: #8E7CC3;
+  --color-brand-pink: #F4C2C2;
+  --color-brand-gold: #D4AF37;
+  --color-brand-cream: #FFFAF4;
+  --color-brand-wood: #F4E6D4;
+  --color-brand-dark: #332844;
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  
+  --background-image-woodgrain: linear-gradient(to bottom right, #f8f1e7, #e8d5bc);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-sans);
+  color: var(--color-brand-dark);
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Custom Utilities */
+.bg-woodgrain {
+  background-image: var(--background-image-woodgrain);
+}
+
+.text-brand-purple { color: var(--color-brand-purple); }
+.text-brand-gold { color: var(--color-brand-gold); }
+.text-brand-dark { color: var(--color-brand-dark); }
+.text-brand-cream { color: var(--color-brand-cream); }
+
+.bg-brand-purple { background-color: var(--color-brand-purple); }
+.bg-brand-cream { background-color: var(--color-brand-cream); }
+.bg-brand-wood { background-color: var(--color-brand-wood); }

@@ -1,0 +1,73 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import ProductCard from '../components/ProductCard.astro';
+import WhySection from '../components/WhySection.astro';
+import Footer from '../components/Footer.astro';
+
+const products = [
+  {
+    title: 'Royal Princess Jar',
+    price: '$15.00',
+    imageUrl: '/images/royal_princess_jar.png'
+  },
+  {
+    title: 'Dino Discovery Jar',
+    price: '$16.00',
+    imageUrl: '/images/dino_discovery_jar.png'
+  },
+  {
+    title: 'Magical Garden Jar',
+    price: '$19.00',
+    imageUrl: '/images/magical_garden_jar.png'
+  },
+  {
+    title: 'Rainbow Unicorn Jar',
+    price: '$16.00',
+    imageUrl: '/images/rainbow_unicorn_jar.png'
+  }
+];
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malia Eve Designs | The Sensory Jar Collection</title>
+  <meta name="description" content="Handcrafted premium sensory dough jars curated to spark creative play for little imaginations." />
+  <link rel="canonical" href="https://www.maliaevedesigns.com/" />
+  <!-- A generated Favicon placeholder -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23D4AF37'%3E%3Cpath d='M2 18h20v2H2v-2zm2-2l2-8 3 4 3-9 3 9 3-4 2 8H4z'/%3E%3C/svg%3E" />
+</head>
+<body class="bg-brand-cream font-sans antialiased selection:bg-brand-pink selection:text-brand-dark">
+
+  <Header />
+  
+  <main>
+    <Hero />
+    
+    <!-- Featured Collections Section -->
+    <section class="w-full py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-serif text-4xl md:text-5xl text-center text-brand-dark mb-16 tracking-wide">Featured Collections</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 xl:gap-12">
+          {products.map(product => (
+            <ProductCard 
+              title={product.title} 
+              price={product.price} 
+              imageUrl={product.imageUrl} 
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <WhySection />
+  </main>
+
+  <Footer />
+
+</body>
+</html>

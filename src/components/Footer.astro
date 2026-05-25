@@ -1,0 +1,32 @@
+---
+// Footer component
+const currentYear = new Date().getFullYear();
+---
+<footer class="w-full bg-brand-cream py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+    
+    <!-- Warning Text -->
+    <div class="w-full flex justify-center mb-10">
+      <div class="bg-white px-6 py-3 border border-brand-pink rounded-md shadow-sm max-w-2xl text-center">
+        <p class="font-sans text-sm font-semibold text-brand-dark/80 tracking-wide uppercase">
+          <span class="text-red-500 mr-2">⚠️</span>
+          Warning: Choking Hazard - Small Parts. Not for children under 3 years.
+        </p>
+      </div>
+    </div>
+
+    <!-- Main Footer Links -->
+    <div class="flex flex-wrap justify-center items-center gap-6 md:gap-10 mb-8 font-sans text-sm font-medium text-brand-dark/70 uppercase tracking-widest">
+      <a href="#" class="hover:text-[#8E7CC3] transition-colors">Privacy</a>
+      <a href="#" class="hover:text-[#8E7CC3] transition-colors">Terms</a>
+      <a href="#" class="hover:text-[#8E7CC3] transition-colors">Contact</a>
+      <a href="https://www.maliaevedesigns.com" class="hover:text-[#8E7CC3] transition-colors">www.maliaevedesigns.com</a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="font-sans text-xs text-brand-dark/50 tracking-wider">
+      &copy; {currentYear} Malia Eve Designs. All rights reserved.
+    </p>
+    
+  </div>
+</footer>

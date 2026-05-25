@@ -1,0 +1,54 @@
+---
+// Header component
+---
+<header class="w-full sticky top-0 z-50 bg-woodgrain shadow-sm border-b border-[#e8d5bc]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-24">
+      
+      <!-- Logo Area -->
+      <div class="flex items-center gap-3 cursor-pointer">
+        <!-- Crown SVG (Gold) -->
+        <svg class="w-12 h-12 text-[#D4AF37]" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M2 18h20v2H2v-2zm2-2l2-8 3 4 3-9 3 9 3-4 2 8H4z"/>
+        </svg>
+        <div class="flex flex-col justify-center">
+          <span class="font-serif text-3xl font-bold tracking-wide text-[#8E7CC3] leading-none">MALIA EVE</span>
+          <span class="font-sans text-xs font-semibold tracking-[0.3em] text-[#D4AF37] mt-1 pl-1">DESIGNS</span>
+        </div>
+      </div>
+
+      <!-- Center Navigation (Desktop) -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="#" class="text-[#332844] font-medium text-sm hover:text-[#8E7CC3] border-b-2 border-[#8E7CC3] pb-1 transition-colors">SHOP JARS</a>
+        <a href="#" class="text-[#332844] font-medium text-sm hover:text-[#8E7CC3] border-b-2 border-transparent hover:border-[#8E7CC3] pb-1 transition-colors">THE COLLECTION</a>
+        <a href="#" class="text-[#332844] font-medium text-sm hover:text-[#8E7CC3] border-b-2 border-transparent hover:border-[#8E7CC3] pb-1 transition-colors">OUR STORY</a>
+        <a href="#" class="text-[#332844] font-medium text-sm hover:text-[#8E7CC3] border-b-2 border-transparent hover:border-[#8E7CC3] pb-1 transition-colors">BLOG</a>
+        <a href="#" class="text-[#332844] font-medium text-sm hover:text-[#8E7CC3] border-b-2 border-transparent hover:border-[#8E7CC3] pb-1 transition-colors">CONTACT</a>
+      </nav>
+
+      <!-- Right Actions -->
+      <div class="flex items-center space-x-6">
+        <!-- Cart -->
+        <button class="text-[#332844] hover:text-[#8E7CC3] transition-colors relative">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+          </svg>
+        </button>
+        <!-- Account -->
+        <button class="hidden sm:flex items-center space-x-2 text-[#332844] hover:text-[#8E7CC3] transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+          </svg>
+          <span class="font-medium text-sm uppercase tracking-wider">ACCOUNT</span>
+        </button>
+        <!-- Mobile menu button -->
+        <button class="md:hidden text-[#332844]">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>

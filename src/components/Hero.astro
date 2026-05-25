@@ -1,39 +1,21 @@
 ---
 // Hero component
 ---
-<section class="relative w-full overflow-hidden bg-woodgrain min-h-[600px] flex items-center">
-  <!-- Optional subtle overlay to ensure white text pops if woodgrain is too light -->
-  <div class="absolute inset-0 bg-black/5 pointer-events-none"></div>
+<section class="relative w-full overflow-hidden min-h-[550px] md:min-h-[650px] lg:min-h-[750px] flex items-center bg-cover bg-center" style="background-image: url('/images/hero_jar.png');">
+  <!-- Subtle dark overlay to ensure text legibility while keeping the bright, premium photo feel -->
+  <div class="absolute inset-0 bg-black/15 pointer-events-none"></div>
   
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-    <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
-      
-      <!-- Text Content -->
-      <div class="w-full lg:w-5/12 pt-12 lg:pt-0">
-        <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl text-white font-medium leading-[1.1] mb-8" style="text-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-          Curated Wonder<br/>
-          for Little<br/>
-          Imaginations
-        </h1>
-        <a href="#" class="inline-block bg-white text-brand-dark font-sans font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-sm shadow-md hover:shadow-lg transition-shadow">
-          EXPLORE THE JARS
-        </a>
-      </div>
-      
-      <!-- Hero Image -->
-      <div class="w-full lg:w-7/12 relative flex justify-center lg:justify-end">
-        <div class="relative w-full max-w-[700px] aspect-square lg:aspect-auto lg:h-[600px]">
-          <!-- The image naturally fills this space. object-contain or object-cover depends on crop -->
-          <img 
-            src="/images/hero_jar.png" 
-            alt="Malia Eve Sensory Jar Collection" 
-            class="w-full h-full object-cover object-center rounded-3xl shadow-xl"
-          />
-          <!-- Since the generated image has a wood background, we might want to blend it using mix-blend-multiply 
-               or just let it stand as a beautiful photograph. I'll remove the mix-blend and just use soft rounded corners to make it look like a feature window if it doesn't match perfectly, OR better: if the image IS the flatlay, we just make it the background of the right side. Wait, the screenshot has the jar integrated. Let's just use the image directly with no background blend, as it's a flatlay photograph itself. -->
-        </div>
-      </div>
-      
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-24 md:py-32">
+    <div class="w-full md:w-8/12 lg:w-6/12">
+      <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl text-white font-medium leading-[1.1] mb-8 select-none" style="text-shadow: 0 4px 12px rgba(0,0,0,0.35);">
+        Curated Wonder<br/>
+        for Little<br/>
+        Imaginations
+      </h1>
+      <a href="#shop" class="inline-block bg-white text-brand-dark font-sans font-bold uppercase tracking-widest text-xs md:text-sm px-8 py-4 rounded-sm shadow-md hover:shadow-lg transition-shadow">
+        EXPLORE THE JARS
+      </a>
     </div>
   </div>
 </section>
+
